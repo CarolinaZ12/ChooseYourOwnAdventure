@@ -6,34 +6,33 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across a beautiful butterfly",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
-                },
-
-                {
-                    text: "Keep on moving",
+                    text: "You don't follow it",
                     nextLevel: "field",
                 },
+                {
+                    text:"You follow it into a forest",
+                    nextLevel: "forest",
+                }
             ]
         },
 
-        cave: {
+        forest: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "A rabbit appears!",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "You follow the rabbit",
+                    nextLevel: "more",
                 },
             ]
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message: "You go home",
             choices: [
                 {
                     text: "Start over",
@@ -44,3 +43,4 @@ var game = {
 
     }
 };
+       
