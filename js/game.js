@@ -41,7 +41,7 @@ var game = {
             message: "They hop along a stream of water...",
             choices: [
                 {
-                    text: "You decide to abandon your shoes and follow the cute rabbit",
+                    text: "You decide to abandon your shoes and follow the cute rabbits",
                     nextLevel: "water",
                 },
                 {
@@ -91,6 +91,7 @@ var game = {
             ]
         },
         home: {
+            music: "goBack.mp3",
             background_image: "homePage.jpeg",
             message:"Well, now you'll never know how interesting the forest can be...",
             choices: [
